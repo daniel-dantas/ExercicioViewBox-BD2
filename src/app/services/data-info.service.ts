@@ -23,7 +23,7 @@ export class DataInfoService {
   }
 
   getCountys(siglaState: string): Observable<County[]>{
-    return this.http.get(`${this.api}/getCitys/${siglaState}`) as Observable<County[]>;
+    return this.http.get(`${this.api}/getCountys/${siglaState}`) as Observable<County[]>;
   }
 
   getViewBox(municipioNome: string): Observable<string>{
