@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div id="home">
+  <form [formGroup]="form" (submit)="submit()" class="form">
+    <h3>Pesquise o mapa da sua cidade</h3>
+    <app-autocomplete class="input-form" max="2" [options]="states" label="Sigla do Estado" [formControl]="form.get('state')" ></app-autocomplete>
+    <app-autocomplete class="input-form" *ngIf="verifyState()" [options]="countys" label="Municipio" [formControl]="form.get('county')" ></app-autocomplete>
+    <button *ngIf="!this.form.invalid" color="warn" mat-flat-button type="submit">Pesquisar</button>
+    <button *ngIf="this.form.invalid" disabled color="warn" mat-flat-button type="submit">Pesquisar</button>
+  </form>
+</div>

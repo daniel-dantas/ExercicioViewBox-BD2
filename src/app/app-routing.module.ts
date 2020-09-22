@@ -8,7 +8,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'map/:state/:city', component: MapComponent },
+  { path: 'map/:state/:county', component: MapComponent },
   { path: '**', component: NotfoundComponent }
 ];
 
