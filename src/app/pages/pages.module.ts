@@ -16,7 +16,7 @@ import { MapComponent } from './map/map.component';
     CommonModule,
     ComponentsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class PagesModule { }

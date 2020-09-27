@@ -1,1 +1,7 @@
-<p>map works!</p>
+<div id="map">
+  <div *ngIf="this.county">
+    <h3>{{this.county.nome}}</h3>
+    <span>Área: {{this.county.area}}</span>
+    <app-svg [county]="this.county" [viewBox]="this.county.viewBox" [svgData]="this.county.svgData" ></app-svg>
+  </div>
+</div>
