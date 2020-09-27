@@ -7,9 +7,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { SvgComponent } from './svg/svg.component';
 
 @NgModule({
-  declarations: [AutocompleteComponent],
+  declarations: [AutocompleteComponent, SvgComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -18,7 +19,8 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
     MatInputModule,
   ],
   exports: [
-    AutocompleteComponent
+    AutocompleteComponent,
+    SvgComponent
   ]
 })
 export class ComponentsModule { }
